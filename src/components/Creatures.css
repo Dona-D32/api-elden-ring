@@ -1,0 +1,196 @@
+Body{
+  background-color: black;
+  color:white;
+}
+
+
+/* Grille pour afficher les créatures */
+.creatures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Carte pour chaque créature */
+  .creature-card {
+    background-color: #3a0e0e;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(21, 20, 20, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Image de la créature */
+  .creature-image {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 500px;
+  }
+  
+  /* Nom de la créature */
+  .creature-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Description de la créature */
+  .creature-description {
+    margin-top: 8px;
+  }
+  
+  /* Localisation de la créature */
+  .creature-location {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  /* Liste des drops de la créature */
+  .creature-drops {
+    margin-top: 10px;
+  }
+  
+  /* Éléments de la liste des drops */
+  .creature-drop-item {
+    margin-top: 5px;
+  }
+  
+  /* Titre */
+  .horror-text {
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: flickering;
+    animation-timing-function: step-start;
+    color: #912914;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 96px;
+  }
+  
+  @keyframes flickering {
+    0% {
+      color: #912914;
+      text-shadow: none;
+      transform: skewX(0);
+    }
+    5% {
+      color: #912914;
+      text-shadow: none;
+      transform: skewX(0);
+    }
+    10% {
+      color: #912914;
+      text-shadow: 1px 1px #eee;
+      transform: skewX(-15deg);
+    }
+    15% {
+      color: #ccc;
+      text-shadow: none;
+      transform: skewX(-15deg);
+    }
+    20% {
+      color: #912914;
+      text-shadow: none;
+      transform: skewX(0);
+    }
+    25% {
+      color: #ccc;
+      text-shadow: 2px 2px #912914;
+      transform: skewX(0);
+    }
+    30% {
+      color: #ccc;
+      text-shadow: 2px 2px #912914;
+      transform: skewX(0);
+    }
+    35% {
+      color: #ccc;
+      text-shadow: 2px 2px #912914;
+      transform: skewX(0);
+    }
+    37% {
+      color: #ccc;
+      text-shadow: 1px 1px #eee;
+      transform: skewX(0);
+    }
+    40% {
+      color: #912914;
+      text-shadow: 1px 1px #eee;
+      transform: skewX(0);
+    }
+    45% {
+      color: #912914;
+      text-shadow: 1px 1px #eee;
+      transform: skewX(0);
+    }
+    50% {
+      color: #912914;
+      text-shadow: none;
+      transform: skewX(0);
+    }
+    55% {
+      color: #912914;
+      text-shadow: none;
+      transform: skewX(0);
+    }
+    60% {
+      color: #912914;
+      text-shadow: none;
+      transform: skewX(0);
+    }
+    65% {
+      color: #912914;
+      text-shadow: none;
+      transform: skewX(0);
+    }
+    68% {
+      color: #912914;
+      text-shadow: 1px 1px #eee;
+      transform: skewX(0);
+    }
+    70% {
+      color: #912914;
+      text-shadow: 1px 1px #eee;
+      transform: skewX(0);
+    }
+    75% {
+      color: #912914;
+      text-shadow: 1px 1px #eee;
+      transform: skewX(10deg);
+    }
+    80% {
+      color: #912914;
+      text-shadow: 1px 1px #eee;
+      transform: skewX(10deg);
+    }
+    85% {
+      color: #912914;
+      text-shadow: 1px 1px #eee;
+      transform: skewX(10deg);
+    }
+    90% {
+      color: #912914;
+      text-shadow: none;
+      transform: skewX(0);
+    }
+    95% {
+      color: #912914;
+      text-shadow: 1px 1px #eee;
+      transform: skewX(0);
+    }
+    100% {
+      color: #912914;
+      text-shadow: none;
+      transform: skewX(0);
+    }
+  }
+  
+  
+
+
+  /* Styles pour les écrans plus petits (moins de 600px) */
+  @media screen and (max-width: 600px) {
+    .creatures-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
