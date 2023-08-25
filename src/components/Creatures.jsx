@@ -15,7 +15,7 @@ const Creatures = () => {
 
   return (
     <div>
-      <h1 class="horror-text">Elden Ring Creatures</h1> 
+      <h1 className="horror-text">Elden Ring Creatures</h1> 
       <div className="creatures-container">
         {data && data.map(creature => (
           <div key={creature.id} className="creature-card">
